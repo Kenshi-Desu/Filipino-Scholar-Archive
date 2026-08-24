@@ -1,0 +1,34 @@
+# ====================================================================
+# Filipino Scholar Archive - Git Ignore Rules
+# ====================================================================
+
+# --- Backend (.NET 10 / C#) ---
+Backend/bin/
+Backend/obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docuser
+
+# --- Frontend (Vite / React / TypeScript / Node) ---
+Frontend/node_modules/
+Frontend/dist/
+Frontend/build/
+Frontend/.local
+.eslintcache
+.stylelintcache
+
+# --- Secrets & Environment Configurations ---
+# Ignore local development application settings that might contain secrets
+Backend/appsettings.Development.json
+Frontend/.env
+Frontend/.env.local
+Frontend/.env.*.local
+
+# --- IDEs, Editors & System Files ---
+.vscode/
+.idea/
+*.swp
+Thumbs.db
+Desktop.ini
+.DS_Store
