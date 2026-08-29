@@ -1,5 +1,5 @@
-export { LoginView } from "./LoginView"
-export { RegisterView } from "./RegisterView"
+export { LoginView } from "@/features/authentication/components/LoginView"
+export { RegisterView } from "@/features/authentication/components/RegisterView"
 export { OtpView } from "./OtpView"
 export { ForgotPasswordView } from "./ForgotPasswordView"
 export { ResetPasswordView } from "./ResetPasswordView"
