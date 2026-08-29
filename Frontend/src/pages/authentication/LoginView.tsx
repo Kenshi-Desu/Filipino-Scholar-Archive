@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { loginWithProvider } from '../../services/authService';
+// import { loginWithProvider } from '../../services/authService';
 
 import { Link } from "@tanstack/react-router";
 
@@ -7,16 +7,7 @@ import { Eye, EyeOff, LogIn, Loader2, Mail, Key, Fingerprint } from 'lucide-reac
 import { FaGoogle as Google } from 'react-icons/fa';
 
 import { Button } from "@/components/ui/button";
-import { 
-  Card, 
-  CardHeader, 
-  CardTitle, 
-  CardDescription, 
-  CardContent,
-  CardFooter
-} from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
-import { Separator } from "@/components/ui/separator";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Field, FieldDescription, FieldGroup, FieldLabel, FieldLegend, FieldSeparator, FieldSet } from "@/components/ui/field";
 
@@ -129,7 +120,6 @@ export function LoginView() {
             {/* Social Sign-In Grid */}
             <div className="grid grid-cols-2 gap-2 w-full">
               <Button 
-                onClick={() => loginWithProvider('google')} 
                 variant="outline" 
                 type="button" 
                 className="w-full"
